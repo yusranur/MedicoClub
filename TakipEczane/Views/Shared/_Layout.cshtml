@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Medico Club a Medical Category Bootstrap responsive Website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Medico Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- portfolio -->
+    <link rel="stylesheet" href="~/css/chocolat.css" type="text/css" media="all">
+    <!-- //portfolio -->
+    <!-- font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <!-- //font -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+      <!-- banner -->
+	<div class="banner jarallax">
+        <div class="agileinfo-dot">
+            <div class="header-top">
+                <div class="header">
+                    <div class="header-top-info">
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                                <nav>
+                                    <ul class="nav navbar-nav">
+                                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                        <li><a asp-controller="Ilacs" asp-action="Index">Drugs</a></li>
+                                        <li><a asp-controller="Firmas" asp-action="Index">Brands</a></li>
+                                        <li><a asp-controller="Forms" asp-action="Index">Forms</a></li>
+                                        <li><a asp-controller="Yanetkis" asp-action="Index">Adverse Effects</a></li>
+                                        <li><a asp-controller="Etkis" asp-action="Index">Indications</a></li>
+
+                                        @Html.Partial("_LoginPartial")
+
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="agileits-logo">
+                                    <h1><a href="index.html">Medico <span>Club</span></a></h1>
+                                </div>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+	</div>
+	<!-- //banner -->
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+		<div class="container">
+			<div class="copyright">
+				<p>© 2017 Medico Club. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<script src="~/js/jarallax.js"></script>
+	<script src="~/js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script src="~/js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="~/js/move-top.js"></script>
+	<script type="text/javascript" src="~/js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- Tabs-JavaScript -->
+	<script src="~/js/jquery.filterizr.js"></script>
+		<script src="~/js/controls.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+	<!-- //Tabs-JavaScript -->
+	<!-- PopUp-Box-JavaScript -->
+		<script src="~/js/jquery.chocolat.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-item a').Chocolat();
+			});
+		</script>
+	<!-- //PopUp-Box-JavaScript -->
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- welcome -->
+<div class="welcome" id="about">
+    <div class="container">
+        <div class="agileits-heading">
+            <h2>Welcome to Medicine Stock Tracking System</h2>
+        </div>
+        <div class="agileinfo-about-info">
+            <h4>
+
+                All ınformatıon about medıcıne!
+            </h4>
+            <p>It is a system where you can keep track of current drug information and stock status.
+      </p>
+        </div>
+        <div class="welcome-agileinfo">
+            <div class="col-md-6 col-sm-6 col-xs-6 welcome-grids">
+                <div class="view view-w3-agile">
+                    <img src="images/4.jpg" alt="" class="img-responsive" />
+                    <div class="agileits-w3layouts-mask">
+                        <h4><a asp-controller="Ilacs" asp-action="Index">Drugs</a></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 welcome-grids">
+                <div class="view view-w3-agile">
+                    <img src="~/drugs/brand.jpeg" alt="" class="img-responsive" />
+                    <div class="agileits-w3layouts-mask">
+                        <h4><a asp-controller="Firmas" asp-action="Index">Medicine Brands</a></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //welcome -->

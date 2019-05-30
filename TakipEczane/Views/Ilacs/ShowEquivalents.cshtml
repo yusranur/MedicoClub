@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Ilac>
+
+@{
+    ViewData["Title"] = "ShowEquivalents";
+}
+
+@foreach (var drug in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="~/drugs/@(drug.Ilacadı).png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@drug.Ilacadı</h5>
+            <p class="card-text">Price: @drug.Fiyat</p>
+            <a asp-controller="Ilacs" asp-action="Details" asp-route-id="@drug.Id" class="btn btn-primary">Go to Details</a>
+        </div>
+    </div>
+}
